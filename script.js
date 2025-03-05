@@ -8,7 +8,7 @@ function condiFunc() {
         }
         document.getElementById('result').innerHTML = `The message "${message}" is legitimate.`;
     } 
-    else if (message.includes("AI")) {
+    else if (message.includes("AI") || message.includes("aI") || message.includes("Ai")) {
         document.getElementById('result').innerHTML =`The message "${message}" is tampered with.`;
     }
     else {
